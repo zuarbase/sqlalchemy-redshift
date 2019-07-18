@@ -5,7 +5,7 @@ history = open('CHANGES.rst').read().replace('.. :changelog:', '')
 
 setup(
     name='sqlalchemy-redshift',
-    version='0.7.3',
+    version='0.7.3.1',
     description='Amazon Redshift Dialect for sqlalchemy',
     long_description=readme + '\n\n' + history,
     author='Matt George',
@@ -18,7 +18,7 @@ setup(
     package_data={'sqlalchemy_redshift': ['redshift-ca-bundle.crt']},
     python_requires='>=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*',
     install_requires=[
-        'psycopg2>=2.5',
+        'psycopg2-binary>=2.5',
          # requires sqlalchemy.sql.base.DialectKWArgs.dialect_options, new in
          # version 0.9.2
         'SQLAlchemy>=0.9.2,<2.0.0',
